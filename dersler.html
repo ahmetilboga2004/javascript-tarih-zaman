@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders-1</title>
+
+    <style>
+        body {
+            background-color:lightgray;
+        }
+        .text-primary {
+            color:rgb(31, 29, 168);
+            font-size: 34px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            -webkit-text-stroke: 1px red;
+        }
+        .text-danger {
+            color:red;
+            font-size: 34px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            -webkit-text-stroke: 1px black;
+        }
+        @font-face {
+            font-family: 'press_start_2pregular';
+            src: url('/fonts/PressStart2P/pressstart2p-regular-webfont.woff2') format('woff2'),
+                url('/fonts/PressStart2P/pressstart2p-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'hagin_caps_mediummedium';
+            src: url('/fonts/Hagin/hagincapsmedium-medium-webfont.woff2') format('woff2'),
+                url('/fonts/Hagin/hagincapsmedium-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #container {
+            background-color:rgb(135, 154, 155);
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            margin-top: 80px;
+            color: rgb(194, 44, 74);
+            font-family: 'hagin_caps_mediummedium';
+            border-radius: 4px;
+            box-shadow: 2px 2px 10px royalblue;
+        }
+        #container>h2 {
+            margin-bottom: 5px;
+        }
+        #isim {
+            font-size: 60px;
+            margin: 0px;
+        }
+        .zaman-tarih {
+            width: 200px;
+            height: 100px;
+            padding:5px;
+            position: absolute;
+            bottom:20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(2, 31, 52);
+            border-radius: 2px;
+            background-color: rgb(64, 117, 121);
+            box-shadow: 2px 2px 10px rgb(21, 83, 85);
+        }
+        #mesaj {
+            margin: 15px;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: 'press_start_2pregular';
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <h2>WELCOME</h1>
+        <h1 id="isim"></h1>
+
+        <div class="zaman-tarih">
+            <h3 id="date"></h3>
+            <h3 id="time"></h3>
+        </div>
+
+        <p id="mesaj">KODLUYORUZ FRONTEND WEB PATIKASININ 1.ODEVINI BASARIYLA TAMAMLADINIZ&#128516;</p>
+    </div>
+
+    <script src="odev-1.js"></script>
+
+</body>
+</html>
